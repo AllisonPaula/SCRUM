@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gestión Estudiantil</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/comun.css">
+  <link rel="stylesheet" href="/styles/calificaion.css">
+</head>
+<body>
+  <header>
+    <h1>Colegio Rosa de Sarón</h1>
+    <div class="user-profile">
+      <img src="/imagenes/ppro.jpg" alt="User Avatar">
+      <span>Maestra Pérez</span>
+    </div>
+  </header>
+  <div class="nav_var">
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li><a href="/index.html">Inicio</a></li>
+        <li class="nav-item">
+          <a href="/html/Registro_calificaciones.html" class="nav-link"></i> Registro de Calificaciones</a>
+        </li>
+        <li class="nav-item">
+          <a href="/html/consulta_estudiantes.html" ></i> Consulta de Estudiantes</a>
+        </li>
+        <li><a href="/html/tarea.html"class="nav-link active">Tarea</a></li>
+      </ul>
+    </nav>
+  </div>
+  <main>
+    <section id="crear-tarea">
+      <h2>Crear Nueva Tarea</h2>
+      <form id="crear-tarea-form">
+        <label for="descripcion">Descripción:</label>
+        <input type="text" id="descripcion" name="descripcion" required>
+        <label for="fecha-entrega">Fecha de Entrega:</label>
+        <input type="date" id="fecha-entrega" name="fecha-entrega" required>
+        <button type="submit">Crear Tarea</button>
+      </form>
+    </section>
+    <section id="lista-tareas">
+      <h2>Lista de Tareas</h2>
+      <table id="tabla-tareas">
+        <thead>
+          <tr>
+            <th>Descripción</th>
+            <th>Fecha de Entrega</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-tareas-body"></tbody>
+      </table>
+    </section>
+    </main>
+    <script src="/javaScript/script.js"></script>
+  </body>
+  </html>
